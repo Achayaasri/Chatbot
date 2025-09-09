@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MineRegulator Chatbot</title>
+    <link rel="stylesheet" href="../static/stylesheet.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo">Mini Bot</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Welcome to <br>Mining Regulator Chatbot</h1>
+        <p class="par">Explore the future of mining with our intelligent chatbot.<br> Get instant answers and expert insights on all things mining,<br> right at your fingertips.</p>
+    </div>
+    <div class="chatbox">
+        <form method="POST" action="/">
+            <input class="user_input" type="text" name="query" placeholder="Ask a question">
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div class="answer-box">
+            {% if response %}
+                <ul class="answer">
+                    {% for desc in response %}
+                        <li>{{ desc }}</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p class="answer">Your answer will appear here.</p>
+            {% endif %}
+        </div>
+    </div>
+    <br>
+    <a href="/view_datasets">View Available Datasets</a>
+</body>
+</html>

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.main {
+    width: 100%;
+    background-image:url('../static/image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.navbar {
+    width: 100%;
+    height: 70px;
+    margin: auto;
+}
+.icon{
+    width:280px;
+    height:80px;
+    float: left;
+    color: rgb(177, 174, 7);
+    margin-top:85px;
+    margin-left:650px;
+    font-weight: bold;
+}
+.logo{
+    padding-right:85px;
+    margin-top: 200px;
+    font-weight: bold;
+    font-size: 65px;
+    padding-bottom: 20px;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left:16px;
+}
+.menu ul li {
+    margin-left: 20px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: rgb(253, 66, 206);
+}
+
+.search form {
+    display: flex;
+    align-items: center;
+}
+
+.srch {
+    width: 300px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+}
+.btn {
+    height: 40px;
+    background: orange;
+    color: white;
+    cursor: pointer;
+    padding: 0 20px;
+    margin-left: 10px;
+}
+.btn:hover {
+    background: rgb(253, 66, 206);
+}
+.content {
+    margin-top:-550px;
+    text-align: center;
+    font-size:40px;
+}
+.content h1 {
+    font-size: 40px;
+    color: rgb(216, 207, 20);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.par {
+    font-size: 25px;
+    margin-top: 20px;
+    color: rgb(207, 217, 72);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.chatbox {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.user_input {
+    width: 50%;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.answer-box {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color:gainsboro;
+    border-radius: 5px;
+    color: white;
+}
+.answer {
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    height:155px;
+}

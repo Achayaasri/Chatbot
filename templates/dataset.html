@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Datasets</title>
+</head>
+<body>
+    <h1>Dataset List</h1>
+    <table border="1">
+        <tr>
+            <th>Dataset Name</th>
+            <th>File Path</th>
+        </tr>
+        {% for dataset in datasets %}
+        <tr>
+            <td>{{ dataset[1] }}</td>
+            <td>{{ dataset[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">Go Back to Chatbot</a>
+</body>
+</html>
